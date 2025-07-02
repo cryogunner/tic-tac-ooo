@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic Tac Ooo</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header id="main-header">
+            <h1>Adventure Awaits!</h1>
+            <p class="tagline">Choose your heroes and conquer the grid!</p>
+        </header>
+        <nav id="navbar">
+            <ul>
+                <li><a href='#'>Home</a></li>
+                <li><a href='#'>Themes</a></li>
+                <li><a href='#'>How to Play</a></li>
+                <li><a href='#'>About</a></li>
+            </ul>
+        </nav>
+        <main>
+            <label for="theme">Choose Theme:</label>
+            <select id="theme"> <!--dropdown for theme selection-->
+                <option value="bubblegum-marceline" selected>Princess Bubblegum vs Marceline</option>
+                <option value="finn-jake">Finn vs Jake</option>
+                <option value="gunter-iceking">Gunter vs Ice King</option>
+                <option value="flame-lsp">Flame Princess vs Lumpy Space Princess</option>
+            </select>
+            <div class="character-cards"> <!--flex container-->
+                <div id="player1-card" class="character-card"> <!--player 1 card -left of board-->
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <!--image-->
+                        </div>
+                        <div class="card-back">
+                            <!--description-->
+                        </div>
+                    </div>
+                </div>
+    
+            <!---
+                <label for="mode">Select Mode:</label>
+                <select id=""mode>
+                    <option value="2p" selected>2 Player</option>
+                    <option value="1p">1 Player (vs AI)</option>
+                </select>
+            -->
+                <div id="game-board"> <!--board grid-->
+                    <div class="cell" data-index="0"></div>
+                    <div class="cell" data-index="1"></div>
+                    <div class="cell" data-index="2"></div>
+                    <div class="cell" data-index="3"></div>
+                    <div class="cell" data-index="4"></div>
+                    <div class="cell" data-index="5"></div>
+                    <div class="cell" data-index="6"></div>
+                    <div class="cell" data-index="7"></div>
+                    <div class="cell" data-index="8"></div>
+                </div>
+                <div id="player2-card" class="character-card"> <!--player 2 card -right of board-->
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <!--image-->
+                        </div>
+                        <div class="card-back">
+                            <!--description-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="status"></div> <!--displays statusText-->
+            <button id="restart">Restart</button>
+        </main>
+
+        <footer id="footer">
+            <h5>@ZAIN'S<span style="color:#cc6699"> GAME </span><span style="color:#3366cc"> LAB </span>.</h5>
+            <p><em>Every match is a quest through the Land of Ooo</em></p>
+    </footer>
+
+            <script src="script.js"></script>
+    </body>
+
+</html>
